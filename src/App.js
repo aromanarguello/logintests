@@ -31,8 +31,6 @@ function App({ handleSubmit }) {
 
   const handleOnChange = ({ target: { name, value } }) => setFormData((prev) => ({ ...prev, [name]: value }));
 
-  console.log(formData);
-  console.log(validateInput(formData.email));
   return (
     <Form name="login-form" onSubmit={handleSubmit}>
       <FormItem>
